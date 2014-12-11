@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :pins
+
   root "pages#home"
   get "about" => "pages#about" #this creates the about path
   get "goals" => "pages#goals"
